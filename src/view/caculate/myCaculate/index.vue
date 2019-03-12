@@ -1,6 +1,6 @@
 <template>
   <div class="root">
-    <template v-if="dopeList.length">
+    <template v-if="dopeList && dopeList.length">
       <van-swipe-cell :right-width="65" :on-close="onClose" v-for="dope in dopeList" :key="dope.uuid">
         <input type="hidden" :data-uuid="dope.uuid">
         <van-cell-group>
